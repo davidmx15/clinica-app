@@ -1,10 +1,13 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
   min-height: 100vh;
   background-image: url(../image/Consultorio.png);
   background-repeat: no-repeat;
@@ -13,137 +16,107 @@ body{
   background-attachment: fixed;
 }
 
-/* ---Barra de navegacion--- */
-nav{
-    display: flex;
-    border-radius: 20px;
-    background-color: rgba(247, 244, 244, 0.562);
-    margin: 10px;
-    padding: 10px;
-    box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 1);
+/* --- Contenedor general --- */
+.contenedor {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px;
 }
 
-.person{
-    margin-top: 5px;
-    margin-left: 5px;
-}
-
-nav h1{
-    font-size: 20px;
-    margin-left: auto;
-    margin-left: auto;
-}
-
-.searchh{
-    margin-left: 50px;
-    margin-right: 20px;
-}
-
-.menu{
-    margin-right: 10px;
-}
-
-/* ---Agragar paciente y Citas--- */
-
-.opciones{
-    width: 100%;
-    margin-top: 30px;
-    justify-content: center;
-    display: flex;
-    background: rgba(247, 244, 244, 0.562);
-}
-
-.opciones button{
-    background-color: transparent;
-    border: none;
-    margin: 10px;
-    font-size: 19px;
-}
-
-.tabla{
-    margin-top: 20px;
-    justify-content: center;
-    margin-left: 10px;
-}
-
-.sup{
-    padding: 5px;
-}
-
-/* --- Ajustes generales para responsividad --- */
-body, html {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
-/* --- Asegura que nav se adapte en móviles --- */
+/* --- Barra de navegación --- */
 nav {
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  background-color: rgba(247, 244, 244, 0.562);
+  margin: 10px 0;
+  padding: 10px;
+  box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 1);
 }
 
-/* --- Centra el título en móviles --- */
+.person {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
 nav h1 {
-    flex: 1 1 100%;
-    text-align: center;
-    margin: 10px 0;
+  flex: 1 1 100%;
+  font-size: 20px;
+  text-align: center;
+  margin: 10px 0;
 }
 
-/* --- Botones en columna para pantallas pequeñas --- */
+.searchh {
+  margin-left: 50px;
+  margin-right: 20px;
+}
+
+.menu {
+  margin-right: 10px;
+}
+
+/* --- Botones de opciones --- */
 .opciones {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background: rgba(247, 244, 244, 0.562);
 }
 
 .opciones button {
-    width: 90%;
-    max-width: 400px;
-    font-size: 16px;
+  background-color: transparent;
+  border: none;
+  margin: 10px;
+  font-size: 16px;
+  width: 90%;
+  max-width: 400px;
 }
 
-/* --- Tabla responsiva --- */
+/* --- Tabla de citas --- */
 .tabla {
-    width: 100%;
-    overflow-x: auto;
-    padding: 10px;
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  overflow-x: auto;
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
+  width: 100%;
+  border-collapse: collapse;
 }
 
 th, td {
-    padding: 10px;
-    font-size: 14px;
-    text-align: left;
+  padding: 10px;
+  font-size: 14px;
+  text-align: left;
 }
 
-/* --- Media query para pantallas menores a 600px --- */
+.sup {
+  padding: 5px;
+}
+
+/* --- Media query para móviles --- */
 @media (max-width: 600px) {
-    nav {
-        flex-direction: column;
-    }
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .searchh, .menu, .person {
-        margin: 5px;
-    }
+  .person, .searchh, .menu {
+    margin: 5px;
+  }
 
-    .opciones button {
-        font-size: 14px;
-    }
+  .opciones button {
+    font-size: 14px;
+  }
 
-    th, td {
-        font-size: 12px;
-    }
+  th, td {
+    font-size: 12px;
+  }
 }
-
-html, body {
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
