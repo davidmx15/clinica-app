@@ -1,0 +1,148 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: auto;
+  background-image: url(../image/Consultorio.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 65%, 100%;
+}
+
+.contenedor{
+  background: rgba(255, 255, 255, 0.1);
+  margin: 10px;
+  border-radius: 10px;
+  backdrop-filter: blur(4px);
+}
+
+.formulario{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 35px;
+  justify-content: center;
+}
+.formulario h1{
+  text-align: center;
+  color: black;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+.user i {
+  position: absolute;
+  top: 35%;
+  left: 80%;
+  color: #000;
+  font-size: 1.2em;
+}
+
+.cedula i{
+  position: absolute;
+  top: 42%;
+  left: 80%;
+  color: #000;
+  font-size: 1.2em;
+}
+
+.telefon i{
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  color: #000;
+  font-size: 1.2em;
+}
+
+.correo i{
+  position: absolute;
+  top: 57%;
+  left: 80%;
+  color: #000;
+  font-size: 1.2em;
+}
+
+.contra i{
+  position: absolute;
+  top: 64%;
+  left: 80%;
+  color: #000;
+  font-size: 1.2em;
+}
+
+.confirm i{
+  position: absolute;
+  top: 72%;
+  left: 80%;
+  color: #000;
+  font-size: 1.2em;
+}
+
+input{
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+}
+
+input::placeholder{
+  color: rgba(15, 15, 15, 0.3);
+}
+
+button{
+  margin: 5px auto;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+}
+
+.mensaje {
+  font-size: 11px;
+  padding: 12px;
+  top: -82%;
+  border-radius: 20px;
+  display: none;
+  transition: all 0.4s ease;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  padding-left: 45px;
+  margin-left: 10%;
+}
+
+/* Ícono común para el mensaje */
+.mensaje::before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+/* Estilo para error */
+.mensaje.error {
+  background-color: rgba(243, 6, 6, 0.26);
+  color: #cc0000;
+  display: block;
+}
+
+.mensaje.error::before {
+  content: "❌";
+}
+
+/* Estilo para éxito */
+.mensaje.success {
+  background-color: rgba(252, 251, 251, 0.26);
+  color: #006600;
+  display: block;
+}
+
+.mensaje.success::before {
+  content: "✔️";
+}

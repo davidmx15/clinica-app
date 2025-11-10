@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: auto;
+    background-image: url(../image/Consultorio.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 65%, 100%;
+}
+
+.contenedor{
+    background: rgba(255, 255, 255, 0.1);
+    margin: 10px;
+    border-radius: 10px;
+    backdrop-filter: blur(4px);
+}
+
+.formulario{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+    justify-content: center;
+}
+.formulario h1{
+    text-align: center;
+    color: black;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+input{
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+}
+
+input::placeholder{
+    color: rgba(15, 15, 15, 0.3);
+}
+
+button{
+    margin: 5px auto;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+}

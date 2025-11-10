@@ -1,0 +1,335 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica;
+}
+
+body{
+  height: auto;
+  background-color: #fdf1f1;
+}
+
+/* --- Barra de navegacion --- */
+.persona{
+  display: flex;
+  border-radius: 20px;
+  background-color: #eebbbb;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 5px 5px 15px 0 #ffbdd3;
+  justify-content: center;
+  align-items: center;
+}
+
+.person{
+  margin-top: 5px;
+  margin-right: auto;
+}
+
+.persona h1{
+  font-size: 20px;
+  margin-right: auto;
+  color: #C2185B;
+}
+
+.Cita{
+  text-align: center;
+  margin-top: 25px;
+  color: #D81B60;
+}
+
+.navee{
+  display: flex;
+  width: 100%;
+  margin-top: 10px;
+  background-color: #f6c8c7;
+  padding: 8px;
+}
+
+.ante, .inter, .nota{
+  border: none;
+  background-color: transparent;
+  font-size: 12px;
+  color: #e91e63;
+}
+
+/* --- Tabla heredofamiliares --- */
+.tablaantee{
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  font-size: 13px;
+}
+
+.tableheredo{
+  border: #000 2px solid;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tableheredo th{
+  border: #000 2px solid;
+  padding: 3px;
+  color: #f06292;
+}
+
+.tableheredo input{
+  background-color: rgba(247, 244, 244, 0);
+  border: none;
+  padding: 3px;
+  color: #f48fb1;
+}
+
+.tableheredo td{
+  border: #000 2px solid;
+  color: #f48fb1;
+}
+
+.tableheredo caption{
+  color: #ec407a;
+}
+
+/* --- Personales no patologicos --- */
+.tablepersonales{
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border: #000 2px solid;
+  border-collapse: collapse;
+}
+
+.tablepersonales th{
+  border: #000 2px solid;
+  padding: 3px;
+  color: #f06292;
+}
+
+.tablepersonales input{
+  background-color: rgba(247, 244, 244, 0);
+  border: none;
+  color: #f48fb1;
+  
+}
+
+.tablepersonales td{
+  border: #000 2px solid;
+  color: #f48fb1;
+}
+
+.tablepersonales caption{
+  margin-top: 10px;
+  color: #ec407a;
+}
+
+/* --- Tabla personales patologicos --- */
+.tablepatologicos{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  border: #000 2px solid;
+  border-collapse: collapse;
+}
+
+.tablepatologicos th{
+  border: #000 2px solid;
+  padding: 3px;
+  color: #f06292;
+}
+
+.tablepatologicos input{
+  background-color: rgba(247, 244, 244, 0);
+  border: none;
+  color: #f48fb1;
+}
+
+.tablepatologicos td{
+  border: #000 2px solid;
+  color: #f48fb1;
+}
+
+.tablepatologicos caption{
+  margin-top: 10px;
+  color: #ec407a;
+}
+
+.pademedico{
+  display: block;
+  width: 90%;
+  margin: 10px;
+}
+
+.padeactual{
+  padding: 10px;
+  width: 100%;
+  background-color: #f0d6d5;
+  color: white;
+  font-size: 10px;
+}
+
+/* --- Tabla interrogatorio aparatos y sistemas --- */
+.interrogatorio{
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  font-size: 13px;
+}
+
+.aparatsistem{
+  margin-left: auto;
+  margin-right: auto;
+  border: #000 2px solid;
+  border-collapse: collapse;
+}
+
+.aparatsistem th{
+  border: #000 2px solid;
+  padding: 3px;
+  color: #f06292;
+}
+
+.aparatsistem input{
+  background-color: rgba(247, 244, 244, 0);
+  border: none;
+  width: 100%;
+  color: #f48fb1;
+}
+
+.aparatsistem td{
+  border: #000 2px solid;
+  color: #f48fb1;
+}
+
+.aparatsistem caption{
+  margin-top: 10px;
+  color: #ec407a;
+}
+
+
+.comentafinal{
+  display: inline-block;
+  width: 90%;
+  margin: 10px;
+}
+
+.comfinal{
+  padding: 10px;
+  width: 100%;
+  background-color: #f0d6d5;
+  color: white;
+  font-size: 10px;
+}
+
+.visible{
+  display: table;
+}
+
+.oculto{
+  display: none;
+}
+
+/* --- Nota Medica --- */
+
+ /* < Interrogatorio > */
+.notmedic{
+  margin: 20px;
+}
+
+.motivo, .pade, .fisi{
+  margin: 10px;
+}
+
+.motivo label, .pade label, .fisi label{
+  color: #000;
+  font-size: 14px;
+}
+
+.motivo input, .pade input, .fisi input{
+  border: 2px #000 solid;
+  width: 100%;
+  padding: 4px;
+  margin-top: 3px;
+}
+
+/* < Exploracion > */
+
+.explo{
+  margin: 20px;
+}
+
+.peso, .talla{
+  margin-top: 10px;
+  margin-left: 50px;
+}
+
+.peso input, .talla input{
+  border: 2px #000 solid;
+  width: 40px;
+  padding: 3px;
+  text-align: center;
+}
+
+/* < Signos Vitales > */
+
+.temp{
+  margin-top: 10px;
+  margin-left: 50px;
+}
+
+.fr, .ta, .fc{
+  margin-top: 10px;
+  margin-left: 69px;
+}
+
+.sp, .gluc{
+  margin-top: 10px;
+  margin-left: 50px;
+}
+
+.temp input, .fr input, .ta input, 
+.fc input, .sp input, .gluc input{
+  border: 2px #000 solid;
+  width: 40px;
+  padding: 3px;
+}
+
+/* < Diagnostico > */
+.dig{
+  display: inline-block;
+  width: 90%;
+  margin: 20px;
+}
+
+.diag{
+  margin-top: 5px;
+  padding: 10px;
+  width: 100%;
+  background-color: #000;
+  color: white;
+  font-size: 10px;
+}
+
+/* < t¿Tratamiento > */
+.tra{
+  display: inline-block;
+  width: 90%;
+  margin: 20px;
+}
+
+.trata{
+  margin-top: 5px;
+  padding: 10px;
+  width: 100%;
+  background-color: #000;
+  color: white;
+  font-size: 10px;
+}
+
+.env{
+  display: block;
+  margin: 20px auto;
+  border: none;
+  background: none;
+  font-size: 16px;
+}
