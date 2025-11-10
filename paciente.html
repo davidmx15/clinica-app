@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/paciente.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="person">
+            <i class="bi bi-person-circle"></i>
+        </div>
+
+        <h1>Consultorio</h1>
+
+    </nav>
+
+    <div class="contenedor">
+
+        <form action="" class="formuario_paciente" id="formulario_paciente">
+
+            <h1>Nuevo Paciente</h1>
+
+            <!-- Expediente -->
+            <div class="grupo_expediente">
+                <div class="expediente">
+                    <label for="" class="labelexpediente">No.Expediente</label>
+                    <i class="bi bi-person-rolodex"></i>
+                </div>
+                <input class="contenedor_expediente" type="text" name="expediente" required>
+            </div>
+
+            <!-- Nombre del paciente -->
+            <div class="contenedor_nombre_paciente">
+                <label for="">Nombre</label>
+                <i class="bi bi-person-badge-fill"></i>
+            </div>
+            <input type="text" class="nombre_paciente" required>
+
+            <!-- Feha -->
+            <div class="fecha_nacimiento">
+                <label for="">Fecha de nacimiento</label>
+                <i class="bi bi-calendar2-date"></i>
+            </div>
+            <input id="fechaa" type="date" class="fecha">
+            <div id="rsultadoo" class="resultadoo"></div>
+
+            <!-- Direccion-->
+            <div class="direccion">
+                <label for="">Direccion</label>
+                <i class="bi bi-house-door-fill"></i>
+            </div>
+            <input type="text" class="direc" required>
+
+            <!-- Telefono-->
+            <div class="tel">
+                <label for="">Telefono Casa/ Celular</label>
+                <i class="bi bi-telephone-fill"></i>
+            </div>
+            <input type="tel" class="tell" required>
+
+            <!-- Genero -->
+            <div class="genero">
+                <label for="" class="gen">Genero:</label>
+                <select name="genero" id="genero" class="generoo" onchange="mostrarmujer()">
+                    <option value="opcion">Eliga una opcion</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                </select>
+            </div>
+
+            <!-- opcion de embarazo y lactncia -->
+            <div class="mujer" id="mujer">
+                <label for="">Embarazo/Lactancia</label>
+                <select name="embarazo" id="embarazo">
+                    <option value="opcion">Eliga una opcion</option>
+                    <option value="si">Si</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+
+            <!-- Grupo Sanginio -->
+            <div class="sangineo">
+                <label for="" class="grupo">Grupo sanguineo:</label>
+                <select name="sanginio" id="sanginio" class="sanginioo">
+                    <option value="opcion">Eliga una opcion</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                </select>
+            </div>
+
+            <!-- Ocupacion -->
+            <div class="ocup">
+                <label for="">Ocupacion</label>
+                <i class="bi bi-building"></i>
+            </div>
+            <input type="text" class="ocupacion" required>
+
+            <!-- Escolaridad -->
+            <div class="escolaridad">
+                <label for="" class="escu">Escolaridad:</label>
+                <select name="escuela" id="escuela" class="escuela">
+                    <option value="opcion">Eliga una opcion</option>
+                    <option value="Prescolar">Prescolar</option>
+                    <option value="Primaria">Primaria</option>
+                    <option value="Secundaria">Secundaria</option>
+                    <option value="Preparatoria">Preparatoria</option>
+                    <option value="Licenciatura/Ingenieria">Licenciatura/Ingenieria</option>
+                    <option value="Maestria/Doctorado">Maestria/Doctorado</option>
+                    <option value="Analfabeta">Analfabeta</option>
+                    <option value="No aplica">No aplica</option>
+                </select>
+            </div>
+
+            <!-- Estado Civil-->
+            <div class="Estado">
+                <label for="" class="estado_civil">Estado Civil:</label>
+                <select name="civil" id="civil" class="civil">
+                    <option value="opcion">Eliga una opcion</option>
+                    <option value="Prescolar">Soltero/a</option>
+                    <option value="Primaria">Casado/a</option>
+                    <option value="Secundaria">Viudo/a</option>
+                </select>
+            </div>
+
+            <div class="boton">
+                <button class="Agregar" type="submit">Agregar</button>
+            </div>
+
+        </form>
+
+        <script src="js/paciente.js"></script>
+    </div>
+</body>
+
+</html>
