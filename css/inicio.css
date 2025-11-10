@@ -9,7 +9,8 @@ body{
   background-image: url(../image/Consultorio.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 65%, 100%;
+  background-position: center center;
+  background-attachment: fixed;
 }
 
 /* ---Barra de navegacion--- */
